@@ -28,3 +28,5 @@ The available templates are:
 ### Prerequisites:
 
 - Cloning the GitHub repository [pedro-nlb/latex-templates](https://github.com/pedro-nlb/latex-templates) into a folder $HOME/git.
+- Having [hub](https://github.com/github/hub) installed.
+- Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) for hub.
