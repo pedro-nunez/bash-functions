@@ -30,3 +30,17 @@ The available templates are:
 - Cloning the GitHub repository [pedro-nlb/latex-templates](https://github.com/pedro-nlb/latex-templates) into a folder $HOME/git.
 - Having [hub](https://github.com/github/hub) installed.
 - Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) for hub.
+
+## Create exercise sheets with GitHub repositories
+The exercise sheets are created from a local template.
+The command
+```
+$ sheet 2 13.05.2022
+```
+creates exercise sheet number 2, whose deadline is 13th of May 2022.
+
+### Prerequisites
+
+- Having the local desired templates for gitignore, main.tex and README.md in a folder inside $HOME/Templates. In my case they are in a folder called eg-ss-22.
+- Having [hub](https://github.com/github/hub) installed.
+- Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) for hub.
