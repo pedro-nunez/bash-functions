@@ -29,7 +29,7 @@ For example, the command
 ```
 $ new script title of the talk
 ```
-will create a LaTeX document from the script template with a private GitHub repository called script-title-of-talk.
+will create a LaTeX document from the script template with a private GitHub repository called script-title-of-the-talk.
 
 ### Prerequisites:
 
