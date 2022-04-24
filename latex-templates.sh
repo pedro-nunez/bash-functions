@@ -1,7 +1,7 @@
 #!/bin/bash
 
 new() {
-  # Create a new LaTeX document with the corresponding GitHub repository
+  # Create a new LaTeX document with corresponding private GitHub repository
   # First argument is the type of template (beamer/blurb/notes/script/solutions)
   # Second argument is the name of the new document (blank spaces will be replaced by hyphens)
   cd "${HOME}/git"

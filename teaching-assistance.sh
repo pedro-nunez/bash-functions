@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sheet() {
-  # Create a new exercise sheet for Elementargeometrie with a git repository
+  # Create new exercise sheet for Elementargeometrie with corresponding private GitHub repository
   # First argument is the number of the exercise sheet
   # Second argument is the deadline to hand in the exercise sheet (DD.MM.YYYY)
   cd "${HOME}/git"

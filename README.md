@@ -15,7 +15,7 @@ for a paper published by Serre in 1955, then the output will say so and give the
 
 - Having all references named accordingly inside folders $HOME/books, $HOME/notes and $HOME/papers respectively.
 
-## Create LaTeX documents with GitHub repositories
+## Create LaTeX documents with private GitHub repositories
 The documents are created from the templates in [this repository](https://github.com/pedro-nlb/latex-templates).
 The available templates are:
 
@@ -31,7 +31,7 @@ The available templates are:
 - Having [hub](https://github.com/github/hub) installed.
 - Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) for hub.
 
-## Create exercise sheets with GitHub repositories
+## Create exercise sheets with private GitHub repositories
 The exercise sheets are created from a local template.
 The command
 ```
