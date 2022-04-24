@@ -25,6 +25,12 @@ The available templates are:
 - **Blurb**: for short expository notes about a specific topic. Both the name and the idea are inspired by [Keith Conrad's expository papers](https://kconrad.math.uconn.edu/blurbs/). Many thanks to him for these nice writings, I've used them many times!
 - **Solutions**: to write down solutions to exercises.
 
+For example, the command
+```
+$ new script title of the talk
+```
+will create a LaTeX document from the script template with a private GitHub repository called script-title-of-talk.
+
 ### Prerequisites:
 
 - Cloning the GitHub repository [pedro-nlb/latex-templates](https://github.com/pedro-nlb/latex-templates) into a folder $HOME/git.
