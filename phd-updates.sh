@@ -150,7 +150,7 @@ phd() {
   then
     # Set the TAG and TAGCOLOR appropriately
     TAG="PB"
-    TAGCOLOR="brown"
+    TAGCOLOR="darkbrown"
   else
     # Invalid input
     echo "Invalid input!"
