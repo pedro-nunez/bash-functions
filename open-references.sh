@@ -18,10 +18,10 @@ openref() {
       echo "No reference matched."
     elif [ ${MATCHES} == 1 ]
     then
-      xdg-open "${1}/${2}"* 2>/dev/null & exit
+      okular "${1}/${2}"* 2>/dev/null & exit
       # Exactly one match, so we open the corresopnding reference
       # If we do not wish to close the terminal after opening the reference, we should replace the previous line by
-      # (xdg-open "${1}/${2}"* 2>/dev/null &)
+      # (okular "${1}/${2}"* 2>/dev/null &)
       # See https://stackoverflow.com/a/38278291/4405516 for an explanation on the usage of parentheses above
 
     else
