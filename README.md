@@ -13,6 +13,7 @@ for a paper published by Serre in 1955, then the output will say so and give the
 
 ### Prerequisites:
 
+- Having [Okular](https://en.wikipedia.org/wiki/Okular) installed.
 - Having all references named accordingly inside folders $HOME/books, $HOME/notes and $HOME/papers respectively.
 
 ## Create LaTeX documents with private GitHub repositories
@@ -47,7 +48,7 @@ creates exercise sheet number 2, whose deadline is 13th of May 2022.
 
 ### Prerequisites
 
-- Having the desired local templates for gitignore, main.tex and README.md in a folder inside $HOME/Templates. In my case they are in a folder called eg-ss-22.
+- Having the desired local templates for gitignore, main.tex and README.md in a folder inside $HOME/Templates. In my case they are in a folder called rf-ws-22.
 - Having [hub](https://github.com/github/hub) installed.
 - Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) for hub.
 
