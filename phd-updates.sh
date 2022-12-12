@@ -67,7 +67,7 @@ phd() {
       # So we add \setcounter{section}{${PREVIOUS_WEEK_NUMBER}} after last line containing *include{weeks/week*
       sed -i '1h;1!H;$!d;x;s/.*{weeks\/week[^\n]*/&\n\\\setcounter{section}{'"${PREVIOUS_WEEK_NUMBER}"'}/' "${HOME}/git/phd-2022/main.tex"
       # The following are some more detailed explanations from the nice command, gotten among other places from https://stackoverflow.com/a/37911473/4405516
-
+      # 
       # First the s/.*{weeks/week[^\n]*/&\n\\\setcounter{section}{'"${PREVIOUS_WEEK_NUMBER}"'}/' part
       # This is sed's substitute command
       # In principle, this command alone would treat each line independently and by itself
@@ -83,7 +83,7 @@ phd() {
       # The reason to use [^\n]* instead of .*$ is that later on, when dealing with multiple lines together, we would also match {weeks/week.*\nThe next line\nAnd the next one\nAnd so on until the end of any line after the line containing {weeks/week; due to sed's greed, this would end up matching up until the end of the pattern space I think
       # &\n\\\setcounter{section}{'"${PREVIOUS_WEEK_NUMBER}"'} is the string which we will use to replace the match
       # The & character represents the match, so we will append a new line with \setcounter... to the match
-
+      #
       # Now we move on to 1h;1!H;$!d;x; the following explanation is based on the answer given in https://stackoverflow.com/a/12834372/4405516 and the video https://www.youtube.com/watch?v=l0mKlIswojA
       # Right after we call sed, the first line of main.tex is read and inserted automatically into the pattern space
       # Then the command 1h is executed, which copies the first line of main.tex into the hold space
@@ -103,9 +103,10 @@ phd() {
       # The current hold space contains only the last line, but we don't care about that anymore
       # Now the substitute command is applied to the current pattern buffer, containing all of main.tex (on a single line with \n instead of line breaks, I think)
       # The regular expressions used in the search pattern yield now the desired result: add a line \setcounter... right after the last line containing the pattern {weeks/week
-
+      #
       # Add \include{weeks/week${WEEK_NUMBER}} after \setcounter{section}{${PREVIOUS_WEEK_NUMBER}}
-      sed -i '/^\\\setcounter{section}{'"${PREVIOUS_WEEK_NUMBER}"'}/a \\\include{weeks\/week'"${WEEK_NUMBER}"'}' "${HOME}/git/phd-2022/main.tex"
+      sed -i '/\\setcounter{section}{'"${PREVIOUS_WEEK_NUMBER}"'}/a \\\include{weeks\/week'"${WEEK_NUMBER}"'}' "${HOME}/git/phd-2022/main.tex"
+      # TODO: why did we need ^\\\include... instead of \\include above? I forgot, but for some reason replacing the previous line by /^\\\setcounter... does not work
       # Go to the future location of the yet-to-be-created week file
       cd ${HOME}/git/phd-2022/weeks
       # This week's file will be created here right after we exit this if block
