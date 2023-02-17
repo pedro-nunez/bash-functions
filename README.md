@@ -17,7 +17,7 @@ for a paper published by Serre in 1955, then the output will say so and give the
 - Having all references named accordingly inside folders $HOME/books, $HOME/notes and $HOME/papers respectively.
 
 ## Create LaTeX documents with private GitHub repositories
-The documents are created from the templates in [this repository](https://github.com/pedro-nlb/latex-templates).
+The documents are created from the templates in [this repository](https://github.com/pedro-nunez/latex-templates).
 The available templates are:
 
 - **Notes**: to take notes during a talk or lecture.
@@ -34,7 +34,7 @@ will create a LaTeX document from the script template with a private GitHub repo
 
 ### Prerequisites:
 
-- Cloning the GitHub repository [pedro-nlb/latex-templates](https://github.com/pedro-nlb/latex-templates) into a folder $HOME/git.
+- Cloning the GitHub repository [pedro-nunez/latex-templates](https://github.com/pedro-nunez/latex-templates) into a folder $HOME/git.
 - Having [hub](https://github.com/github/hub) installed.
 - Create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) for hub.
 

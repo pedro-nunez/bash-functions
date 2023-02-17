@@ -13,7 +13,7 @@ new() {
     touch "refs.bib"
     echo "# ${@:2}" >> "README.md"
     echo "" >> "README.md"
-    echo "Document created from the ${1} template [here](https://github.com/pedro-nlb/latex-templates)." >> "README.md"
+    echo "Document created from the ${1} template [here](https://github.com/pedro-nunez/latex-templates)." >> "README.md"
     cp "${HOME}/git/latex-templates/auxiliary/gitignore" ".gitignore"
     git init
     git add .
