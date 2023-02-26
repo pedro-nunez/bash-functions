@@ -1,15 +1,15 @@
 #!/bin/bash
 
 sheet() {
-  # Create new exercise sheet for Elementargeometrie with corresponding private GitHub repository
+  # Create new exercise sheet for current lecture with corresponding private GitHub repository
   # First argument is the number of the exercise sheet
   # Second argument is the deadline to hand in the exercise sheet (DD.MM.YYYY)
   cd "${HOME}/git"
-  mkdir "rf-blatt-${1}"
-  cd "rf-blatt-${1}"
-  cp "${HOME}/Templates/rf-ws-22/main.tex" "main.tex"
-  cp "${HOME}/Templates/rf-ws-22/README.md" "README.md"
-  cp "${HOME}/Templates/rf-ws-22/gitignore" ".gitignore"
+  mkdir "eg-blatt-${1}"
+  cd "eg-blatt-${1}"
+  cp "${HOME}/Templates/eg-ss-23/main.tex" "main.tex"
+  cp "${HOME}/Templates/eg-ss-23/README.md" "README.md"
+  cp "${HOME}/Templates/eg-ss-23/gitignore" ".gitignore"
   sed -i "s/number-of-blatt/${1}/g" "main.tex"
   sed -i "s/number-of-blatt/${1}/g" "README.md"
   sed -i "s/date-of-abgabe/${2}/g" "main.tex"
