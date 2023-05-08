@@ -66,16 +66,3 @@ $ git push origin master
 $ cd ..
 ```
 If no commit message is specified, "Some updates" is used by default.
-
-## PhD updates
-These are various functions to keep a journal with small updates on the various PhD projects.
-For example, the command
-```
-$ p2
-```
-starts editing the journal in the current date with a tag corresponding to project number 2. If arguments are specified, then the argumets are added as a todo.txt task into the +P2 project.
-
-### Prerequisites
-
-- Having the LaTeX document in a repository $HOME/git/phd-2022 and probably some other similar set-up details that I am forgetting now.
-- Using todo.txt for to-do lists.
