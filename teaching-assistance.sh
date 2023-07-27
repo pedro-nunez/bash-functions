@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# The function below requires having hub installed
+
 sheet() {
   # Create new exercise sheet for current lecture with corresponding private GitHub repository
   # First argument is the number of the exercise sheet

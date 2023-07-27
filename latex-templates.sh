@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# The function below requires having hub installed
+
 new() {
   # Create a new LaTeX document with corresponding private GitHub repository
   # First argument is the type of template (beamer/blurb/notes/script/solutions)
