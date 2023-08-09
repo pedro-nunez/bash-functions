@@ -32,7 +32,7 @@ uu() {
     # File does not exist yet, so we create it and include it in main.tex.
     echo "File does not exist yet."
     # We create this month's file (with corresponding chapter title) in the current location.
-    printf "\chapter{$(date +%B) $(date +%Y)}" >> "${AUXILIARY_FILE}"
+    printf "\chapter{$(date +%B) $(date +%Y)}\n" >> "${AUXILIARY_FILE}"
     echo "New month file with corresponding chapter title was created."
     # Delete lines matching include{months/${CURRENT_MONTH} from main.tex, in case they existed.
     sed -i '/include{months\/'"${CURRENT_MONTH}"'/d' "${HOME}/git/updates/main.tex"
@@ -93,7 +93,7 @@ uu() {
   # If the current date does not appear in this month's file, we add the corresponding (unnumbered) section and hyperref marker.
   if ! grep -Fq "\section*{\color{teal}${CURRENT_DATE}}" "${AUXILIARY_FILE}"
   then
-    printf "\n\section*{\color{teal}${CURRENT_DATE}}\n\\\phantomsection\\\label{day:${REF_DATE}}\n" >> "${AUXILIARY_FILE}"
+    printf "\n\section*{\color{teal}${CURRENT_DATE}}\n\\\phantomsection\\\label{day:${REF_DATE}}\n\n" >> "${AUXILIARY_FILE}"
     echo "A new section for the current date was created."
   else
     echo "Section for the current date already exists."
