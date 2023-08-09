@@ -1,7 +1,7 @@
 #!/bin/bash
 
 uu() {
-  # Function to start writing updates on a project, taking tag for that project as input.
+  # Function to start writing (daily) updates on ongoing projects, work, etc.
   # Get current month, in format YYYY-MM.
   CURRENT_MONTH=$(date +%Y-%m)
   echo "Current month is ${CURRENT_MONTH}, i.e., $(date +%B) of $(date +%Y)."
@@ -98,16 +98,6 @@ uu() {
   else
     echo "Section for the current date already exists."
   fi
-  # We use the given input as a tag to create the new subsection, and use a general tag if there is no argument.
-  if [ $# = 0 ]
-  then
-    TAG="general"
-  else
-    TAG=${1}
-  fi
-  echo "The desired tag is [${TAG}]."
-  printf "\n\subsection*{[${TAG}]}\n" >> "${AUXILIARY_FILE}"
-  echo "A new subsection with the corresponding tag was created."
   # We go to the location of the relevant month file.
   cd ${HOME}/git/updates/months
   # We open vim on the last line and start a new line below it in insert mode directly.
