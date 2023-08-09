@@ -83,9 +83,9 @@ uu() {
     else
       # No months are included yet.
       echo "No month files included in main.tex yet."
-      # We add \include{months/${CURRENT_MONTH}} after \mainmatter.
-      sed -i '/mainmatter/a \\n\\include{months\/'"${CURRENT_MONTH}"'}' "${HOME}/git/updates/main.tex"
-      echo "The new month file was included after the mainmatter command in main.tex."
+      # We add \include{months/${CURRENT_MONTH}} after % Monthly files:.
+      sed -i '/Monthly files:/a \\n\\include{months\/'"${CURRENT_MONTH}"'}' "${HOME}/git/updates/main.tex"
+      echo "The new month file was included after the Monthly files comment in main.tex."
     fi
   fi
   # The current month's file exists and is included in main.tex now.
