@@ -43,7 +43,7 @@ b() {
     # For a sinlge author, the first three letters of the name followed by the last two digits of the publication year
     # For several authors, the initial letters of the authors plus the last two digits of the publication year
 
-  openref ${HOME}/books $1
+  openref ${HOME}/Literature/books $1
 }
 
 n() {
@@ -53,7 +53,7 @@ n() {
     # For a sinlge author, the first three letters of the name followed by the last two digits of the publication year
     # For several authors, the initial letters of the authors plus the last two digits of the publication year
 
-  openref ${HOME}/notes $1
+  openref ${HOME}/Literature/notes $1
 }
 
 p() {
@@ -63,5 +63,5 @@ p() {
     # For a sinlge author, the first three letters of the name followed by the last two digits of the publication year
     # For several authors, the initial letters of the authors plus the last two digits of the publication year
 
-  openref ${HOME}/papers $1
+  openref ${HOME}/Literature/papers $1
 }
